@@ -17,7 +17,7 @@
 - `nwg-drawer` a MacOS-like full screen launcher
 #### Autostart Application Support
 - `dex` a utility to run standard autostart applications
-#### Update Notification
+#### Update Notifications
 - `aarchup` to get notified when updates are available
 #### Nightlight Dimer
 - `wlsunset` dim lights and red shift when the sun sets.
