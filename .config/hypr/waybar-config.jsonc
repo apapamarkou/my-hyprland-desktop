@@ -110,6 +110,9 @@
         // "icon-size": 21,
         "spacing": 10
     },
+    "hyprland/language": {
+        "on-click": "swaymsg input \"type:keyboard\" xkb_switch_layout next"
+    },
     "clock": {
         "interval": 60,
         "format": "<b>{:%a %d %b  %H:%M}</b>",

@@ -1,9 +1,5 @@
 #!/bin/bash
 
-echo
-echo
-echo
-echo $1
-curl 'https://wttr.in/thessaloniki?3pq&lang=el' 
+curl 'https://wttr.in/$CITY?3pq&lang=$LOCALE_CODE' 
 read -n 1
 
