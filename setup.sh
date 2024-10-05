@@ -31,6 +31,8 @@ sudo pacman -S --needed base-devel git curl
 
 ~/.local/bin/setup/11-SetupMyGreeter.sh
 
+~/.local/bin/setup/12-CreateMyUpdateGrub.sh
+
 
 
 if ask_user_default_yes "Are you Greek?"; then
