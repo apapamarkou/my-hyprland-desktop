@@ -20,6 +20,11 @@ alias news='w3m https://archlinux.org/news/'
 alias weather='curl "wttr.in/?format=3&lang=el"'
 alias weather3days='curl "wttr.in/?lang=el"'
 alias weather2day='curl "wttr.in/?format=v2"'
+alias commit='git commit -m'
+alias push='git push'
+alias pull='git pull'
+alias add='git add'
+
 
 figlet "Unix System"
 fortune | cowsay
