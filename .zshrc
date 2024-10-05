@@ -24,7 +24,7 @@ alias commit='git commit -m'
 alias push='git push'
 alias pull='git pull'
 alias add='git add'
-
+alias status='git status'
 
 figlet "Unix System"
 fortune | cowsay
