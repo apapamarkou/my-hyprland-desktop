@@ -1,0 +1,26 @@
+HISTSIZE=1000
+SAVEHIST=1000
+HISTFILE=~/.zsh_history
+export ZSH=$HOME/ohmyzsh
+ZSH_THEME="agnoster"
+plugins=(git z zsh-autosuggestions zsh-syntax-highlighting)
+source $HOME/.profile
+source $ZSH/oh-my-zsh.sh
+alias cls=clear
+alias ed='nano'
+alias edit='nano'
+alias ls='exa -lh --color=always --group-directories-first --icons'
+alias la='exa -alh --color=always --group-directories-first --icons'
+alias install='sudo pacman -S --needed'
+alias remove='sudo pacman -R'
+alias search='sudo pacman -Qq'
+alias pkgclear='sudo pacman -Qdtq | sudo pacman -Rns -'
+alias update='yay -Syyu'
+alias news='w3m https://archlinux.org/news/'
+alias weather='curl "wttr.in/?format=3&lang=el"'
+alias weather3days='curl "wttr.in/?lang=el"'
+alias weather2day='curl "wttr.in/?format=v2"'
+
+figlet "Unix System"
+fortune | cowsay
+echo
