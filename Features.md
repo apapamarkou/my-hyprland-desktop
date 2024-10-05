@@ -9,6 +9,8 @@
 - `nwg-look` change themes, icons, fonts.
 #### Wallpaper manager
 - `azote` a nice utility to view and apply wallpaper images
+#### Notifications Panel
+- `swaync` a notification system and a nice semitransparent panel.
 #### Network Manager
 - `nm-applet` a system tray icon app to manage your connections
 #### Application Launcher
