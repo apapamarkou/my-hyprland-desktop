@@ -1,0 +1,45 @@
+
+# Apply Azote background -------------------------------------------
+exec ~/.azotebg
+
+# The top bar ------------------------------------------------------
+exec waybar -c ~/.config/sway/waybar-config.jsonc
+
+# Authentication agent ---------------------------------------------
+exec /usr/bin/lxsession
+
+# Notification Center ----------------------------------------------
+exec swaync
+
+# Pipewire patch bay -----------------------------------------------
+exec qpwgraph -m
+
+# My passwords keeper ----------------------------------------------
+exec keepassxc
+
+# Autostart applications support -----------------------------------
+exec dex -a -s /etc/xdg/autostart/:~/.config/autostart/
+
+# Better handling of windows placement -----------------------------
+exec_always autotiling
+
+# Check for updates every hour -------------------------------------
+exec aarchup
+
+# Night-shift for sway ---------------------------------------------
+exec wlsunset -l 40.2732 -L 22.5929
+
+# Screenshot tool ---------------------------------------------
+exec flameshot
+
+# Applcations grd
+exec_always nwg-drawer -r
+
+exec swayidle -w \
+         timeout 300 'swaylock -f -c 000000' \
+         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+         before-sleep 'swaylock -f -c 000000'
+#
+# This will lock your screen after 300 seconds of inactivity, then turn off
+# your displays after another 300 seconds, and turn your screens back on when
+# resumed. It will also lock your screen before your computer goes to sleep.

@@ -9,6 +9,8 @@ export GSK_RENDERER=gl
 export _JAVA_AWT_WM_NONREPARENTING=1
 export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
 
+
+
 # Use ipinfo.io to find the city
 export CITY=$(curl -s https://ipinfo.io/city | tr '[:upper:]' '[:lower:]')
 

@@ -1,0 +1,20 @@
+gaps inner 15
+gaps outer 0
+smart_gaps off
+default_border pixel 2
+
+# This section is for swayfx
+# commend out if use sway
+blur enable
+corner_radius 10
+default_dim_inactive 0.3
+dim_inactive_colors.unfocused #000000FF
+dim_inactive_colors.urgent #000000FF
+
+# TokyoNight theme
+# Property Name             Border      BG        Text    Indicator Child-border
+client.focused              #f1c40f   #2f343f   #ffffff #ff9f00   #ff9f00
+client.focused_inactive     #68d39600 #2f343f00 #d8dee8 #2f343f00 #2f343f00
+client.unfocused            #2f343f00 #2f343f   #d8dee8 #2f343f00 #2f343f00
+client.urgent               #2f343f00 #2f343f00 #d8dee8 #2f343f00 #2f343f00
+client.placeholder          #2f343f00 #2f343f00 #d8dee8 #2f343f00 #2f343f00
