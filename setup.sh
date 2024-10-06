@@ -41,7 +41,7 @@ if ask_user_default_yes "Are you a pro audio user?"; then
     ~/.local/bin/setup/7-SetupMyWine.sh
     # install muse-sounds-manager
     wget -qO- https://raw.githubusercontent.com/apapamarkou/muse-sounds-manager-generic-installer/main/install_muse_sounds_manager.sh | bash
-    sudo pacman -S  --noconfirm --needed dragonfly-reverb-lv2 carla guitarix reapack reaper sws wine-staging winetricks yabridge yabridgectl musescore
+    sudo pacman -S --noconfirm --needed dragonfly-reverb-lv2 carla guitarix reapack reaper sws wine-staging winetricks yabridge yabridgectl musescore
 fi
 
 if ask_user_default_yes "Are you a terminal fun?"; then
@@ -49,29 +49,29 @@ if ask_user_default_yes "Are you a terminal fun?"; then
 fi
 
 if ask_user_default_yes "Do you need Flatpak support?"; then
-    sudo pacman -S --needed flatpak
+    sudo pacman -S --needed --noconfirm flatpak
 fi
 
 if ask_user_default_yes "Do you need Snap support?"; then
-    yay -S --needed snapd
+    yay -S --needed --noconfirm snapd
 fi
 
 if ask_user_default_yes "Do you need java development support?"; then
-    sudo pacman -S --needed jdk17-openjdk openjdk17-doc openjdk17-src maven instellij-idea-community-edition
+    sudo pacman -S --needed --noconfirm jdk17-openjdk openjdk17-doc openjdk17-src maven instellij-idea-community-edition
 fi
 
 if ask_user_default_yes "Are you coding or using git?"; then
-    yay -S --needed visual-studio-code-bin
+    yay -S --needed --noconfirm visual-studio-code-bin
     ~/.local/bin/setup/8-ConfigMyGit.sh
 fi
 
 if ask_user_default_yes "Are you editing photos?"; then
-    sudo pacman -S --needed gimp inkscape
+    sudo pacman -S --needed --noconfirm gimp inkscape
     yay -S --needed xnconvert
 fi
 
 if ask_user_default_yes "Are you editing videos?"; then
-    sudo pacman -S --needed kdenlive obs-studio
+    sudo pacman -S --needed --noconfirm kdenlive obs-studio
 fi
 
 if ask_user_default_yes "Do you like to see asterics as you type password?"; then
