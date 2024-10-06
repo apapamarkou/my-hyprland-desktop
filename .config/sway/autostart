@@ -2,9 +2,6 @@
 # Apply Azote background -------------------------------------------
 exec ~/.azotebg
 
-# The top bar ------------------------------------------------------
-exec waybar -c ~/.config/sway/waybar-config.jsonc
-
 # Authentication agent ---------------------------------------------
 exec /usr/bin/lxsession
 
@@ -43,3 +40,6 @@ exec swayidle -w \
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
+
+# The top bar ------------------------------------------------------
+exec waybar -c ~/.config/sway/waybar-config.jsonc

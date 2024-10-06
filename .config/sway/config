@@ -1,4 +1,5 @@
 include /etc/sway/config.d/*
+include autostart
 include keyboard
 include variables 
 include look-n-feel
@@ -11,12 +12,15 @@ include key-bindings
 # Read `man 5 sway-bar` for more information about this section.
 #bar {
 #    position top
-#    gaps 3
-#    height 24
+#    gaps 10
+#    separator_symbol " | "
+#    height 30
+#    
 #    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+#   
 #    colors {
 #        statusline #ffffff
-#        background #323232
+#        background #32323288
 #        inactive_workspace #32323200 #32323200 #5c5c5c
 #    }
 #}

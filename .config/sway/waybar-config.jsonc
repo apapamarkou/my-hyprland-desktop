@@ -68,7 +68,7 @@
     },
     "sway/language": {
 	"format": "{short}",
-	"on-click": "flock -n ~/sway-input-config.lock sway-input-config",
+	"on-click": "swaymsg input \"type:keyboard\" xkb_switch_layout next",
 	"on-click-right": "flock -n ~/sway-input-config.lock sway-input-config"
     },
     "sway/scratchpad": {
@@ -113,7 +113,8 @@
     },
     "tray": {
         // "icon-size": 21,
-        "spacing": 10
+        "spacing": 10,
+        "all-handle-events": true
     },
     "clock": {
         "interval": 60,
@@ -228,9 +229,9 @@
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", 
 		"menu-actions": {
-		    "logout": "swaymsg exit",
-			"shutdown": "shutdown",
-			"reboot": "reboot",
+		    "logout": "GTK_THEME=Adwaita:dark zenity --question --text='Are you shure you want to log out?' && swaymsg exit",
+			"shutdown": "GTK_THEME=Adwaita:dark zenity --question --text='Are you shure you want to shut down?' && shutdown -h now",
+			"reboot": "GTK_THEME=Adwaita:dark zenity --question --text='Are you shure you want to reboot?' && reboot",
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"
 		}
