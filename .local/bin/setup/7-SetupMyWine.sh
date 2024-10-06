@@ -2,7 +2,7 @@
 
 # Script to set up Wine, Winetricks, and Yabridge for VST plugin directories
 
-sudo pacman -S --needed avldrums.lv2 carla dragonfly-reverb-lv2 guitarix qpwgraph reapack reaper sws wine-staging winetricks yabridge yabridgectl
+sudo pacman -S --needed  --noconfirm avldrums.lv2 carla dragonfly-reverb-lv2 guitarix qpwgraph reapack reaper sws wine-staging winetricks yabridge yabridgectl
 
 # Define VST plugin paths
 VST_PATH1="$HOME/.wine/drive_c/Program Files/Steinberg/VstPlugins"

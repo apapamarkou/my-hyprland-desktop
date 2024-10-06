@@ -29,11 +29,7 @@ sudo pacman -S --needed base-devel git curl
 
 ~/.local/bin/setup/3-InstallMyPackages.sh
 
-~/.local/bin/setup/11-SetupMyGreeter.sh
-
 ~/.local/bin/setup/12-CreateMyUpdateGrub.sh
-
-
 
 if ask_user_default_yes "Are you Greek?"; then
     ~/.local/bin/setup/4-AddMyGreekLanguage.sh
@@ -45,7 +41,7 @@ if ask_user_default_yes "Are you a pro audio user?"; then
     ~/.local/bin/setup/7-SetupMyWine.sh
     # install muse-sounds-manager
     wget -qO- https://raw.githubusercontent.com/apapamarkou/muse-sounds-manager-generic-installer/main/install_muse_sounds_manager.sh | bash
-    sudo pacman -S dragonfly-reverb-lv2 carla guitarix reapack reaper sws wine-staging winetricks yabridge yabridgectl musescore
+    sudo pacman -S  --noconfirm --needed dragonfly-reverb-lv2 carla guitarix reapack reaper sws wine-staging winetricks yabridge yabridgectl musescore
 fi
 
 if ask_user_default_yes "Are you a terminal fun?"; then

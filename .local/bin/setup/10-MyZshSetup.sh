@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo pacman -S --needed zsh git exa fortune-mod cowsay aria2 cmatrix figlet htop mc mutt pastel pastel-docs plocate w3m wget duf wiki-tui
-yay so-git
+sudo pacman -S --needed  --noconfirm zsh git exa fortune-mod cowsay aria2 cmatrix figlet htop mc mutt pastel pastel-docs plocate w3m wget duf wiki-tui
+yay -S --noconfirm --needed so-git
 
 chsh -s /usr/bin/zsh
 git clone https://github.com/ohmyzsh/ohmyzsh.git

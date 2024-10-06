@@ -24,17 +24,26 @@ for url in $font_urls; do
   # Define the target directory for this font
   FONT_DIR="$BASE_FONT_DIR/$font_name"
   
-  # Create the directory
-  mkdir -p "$FONT_DIR"
-  
-  # Download the zip file
-  wget "$url" -O "/tmp/$font_name.zip"
-  
-  # Extract the zip file into the specific directory
-  unzip "/tmp/$font_name.zip" -d "$FONT_DIR"
-  
-  # Remove the zip file after extraction
-  rm "/tmp/$font_name.zip"
+  # Check if the font is already installed
+  if [ -d "$FONT_DIR" ]; then
+    echo "Font '$font_name' is already installed, skipping."
+  else
+    echo "Installing font '$font_name'..."
+    
+    # Create the directory
+    mkdir -p "$FONT_DIR"
+    
+    # Download the zip file
+    wget "$url" -O "/tmp/$font_name.zip"
+    
+    # Extract the zip file into the specific directory
+    unzip "/tmp/$font_name.zip" -d "$FONT_DIR"
+    
+    # Remove the zip file after extraction
+    rm "/tmp/$font_name.zip"
+    
+    echo "Font '$font_name' installed successfully."
+  fi
 done
 
 # Update the font cache

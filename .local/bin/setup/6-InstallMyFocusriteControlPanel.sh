@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S --needed gtk4
+sudo pacman -S --needed  --noconfirm gtk4
 
 # Create the directory and navigate to it
 mkdir -p ~/Documents/development/builds

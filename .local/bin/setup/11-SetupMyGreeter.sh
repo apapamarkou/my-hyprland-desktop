@@ -1,21 +1,14 @@
 #!/bin/bash
 
-# Απενεργοποίηση όλων των συνηθισμένων display managers
-echo "Απενεργοποίηση των display managers..."
+# Disable all possible display managers
+echo "Disabling all possible display managers..."
 sudo systemctl disable gdm.service
 sudo systemctl disable lightdm.service
 sudo systemctl disable sddm.service
 sudo systemctl disable lxdm.service
 
-# Σταμάτημα των display managers
-echo "Σταμάτημα των display managers..."
-sudo systemctl stop gdm.service
-sudo systemctl stop lightdm.service
-sudo systemctl stop sddm.service
-sudo systemctl stop lxdm.service
-
-# Δημιουργία ή αντικατάσταση του config αρχείου για το greetd
-echo "Δημιουργία ή αντικατάσταση του αρχείου διαμόρφωσης /etc/greetd/config.toml..."
+# Createding config for greetd
+echo "Creating config file /etc/greetd/config.toml..."
 sudo tee /etc/greetd/config.toml > /dev/null << EOF
 [terminal]
 vt = 1
@@ -25,10 +18,10 @@ command = "/usr/bin/tuigreet --remember"
 user = "greeter"
 EOF
 
-# Ενεργοποίηση και εκκίνηση του greetd
-echo "Ενεργοποίηση και εκκίνηση του greetd..."
+# Enable greetd
+echo "Enabling greetd..."
 sudo systemctl enable greetd.service
-sudo systemctl start greetd.service
 
-echo "Η διαδικασία ολοκληρώθηκε. Ο greetd είναι ενεργοποιημένος και τρέχει."
+
+echo "Greetd is enabled. It will be activated at next boot"
 
