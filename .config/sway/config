@@ -18,7 +18,7 @@ set $calculator qalculate-gtk
 set $menu nwg-drawer
 
 # The top bar ------------------------------------------------------
-waybar -c ~/.config/sway/waybar-config.jsonc
+exec waybar -c ~/.config/sway/waybar-config.jsonc
 
 # Authentication agent ---------------------------------------------
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1

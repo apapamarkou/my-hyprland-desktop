@@ -3,6 +3,7 @@ text/plain=xed.desktop
 text/x-csrc=xed.desktop
 image/jpeg=userapp-swayimg -s fit -f %f-PYFAV2.desktop
 application/x-shellscript=xed.desktop
+image/png=userapp-swayimg -s fit -f %f-PYFAV2.desktop
 
 [Added Associations]
 text/plain=xed.desktop;
@@ -12,3 +13,4 @@ application/x-shellscript=okularApplication_txt.desktop;xed.desktop;
 application/x-desktop=xed.desktop;
 image/webp=swayimg.desktop;okularApplication_kimgio.desktop;
 application/xml=xed.desktop;
+image/png=userapp-swayimg -s fit -f %f-PYFAV2.desktop;
