@@ -24,7 +24,7 @@ exec_always autotiling
 exec aarchup
 
 # Night-shift for sway ---------------------------------------------
-exec wlsunset -l 40.2732 -L 22.5929
+exec wlsunset -l $LATITUDE -L $LONGITUDE
 
 # Screenshot tool ---------------------------------------------
 exec flameshot
