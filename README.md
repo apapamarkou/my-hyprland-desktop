@@ -17,11 +17,11 @@ This repo contains my post-install scripts to quickly set up a fresh Arch Linux 
 
 ## Desktop Features
 
-- `sway` + `hyprland` - window managers
-- `waybar` - desktop bar
-- `azote` - wallpaper manager
-- `swaync` - notifications panel
-- `dex` - autostart applications support
+- `[sway](https://swaywm.org/)` + `[hyprland](https://hyprland.org/)` - window managers
+- `[waybar](https://github.com/Alexays/Waybar)` - desktop bar
+- `[azote](https://github.com/nwg-piotr/azote)` - wallpaper manager
+- `[swaync](https://github.com/catppuccin/swaync)` - notifications panel
+- `[dex](https://github.com/jceb/dex)` - autostart applications support
 - `autotiling` - auto-decide tiling for new windows
 - `aarchup` - updates notification
 - `wlsunset` - night light based on your location's sunset
