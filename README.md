@@ -17,21 +17,21 @@ This repo contains my post-install scripts to quickly set up a fresh Arch Linux 
 
 ## Desktop Features
 
-- `[sway](https://swaywm.org/)` + `[hyprland](https://hyprland.org/)` - window managers
-- `[waybar](https://github.com/Alexays/Waybar)` - desktop bar
-- `[azote](https://github.com/nwg-piotr/azote)` - wallpaper manager
-- `[swaync](https://github.com/catppuccin/swaync)` - notifications panel
-- `[dex](https://github.com/jceb/dex)` - autostart applications support
-- `[autotiling](https://github.com/nwg-piotr/autotiling)` - auto-decide tiling for new windows
-- `[aarchup](https://github.com/aericson/aarchup)` - updates notification
-- `[wlsunset](https://sr.ht/~kennylevinsen/wlsunset/)` - night light based on your location's sunset
-- `[flameshot](https://github.com/flameshot-org/flameshot)` - screenshots tool
-- `[nwg-drawer](https://github.com/nwg-piotr/nwg-drawer)` - full-screen application and file launcher/finder
-- `[swaylock](https://github.com/swaywm/swaylock)` - a lock screen with blurred background
-- `[qpwgraph](https://github.com/rncbc/qpwgraph)` - an easy audio routing panel (PipeWire)
-- `[pipewire-controller](https://github.com/apapamarkou/pipewire-controller)` - a tray icon to change audio sample rate and buffer size
-- `[appimage-integrator](https://github.com/apapamarkou/appimage-integrator)` - simply drop AppImages into your "Applications" folder for automatic installation/integration into launchers, or delete them to uninstall
-- `[lxsession](https://github.com/lxde/lxsession)` - a lightweight session manager
+- [sway](https://swaywm.org/) + [hyprland](https://hyprland.org/) - window managers
+- [waybar](https://github.com/Alexays/Waybar) - desktop bar
+- [azote](https://github.com/nwg-piotr/azote) - wallpaper manager
+- [swaync](https://github.com/catppuccin/swaync) - notifications panel
+- [dex](https://github.com/jceb/dex) - autostart applications support
+- [autotiling](https://github.com/nwg-piotr/autotiling) - auto-decide tiling for new windows
+- [aarchup](https://github.com/aericson/aarchup) - updates notification
+- [wlsunset](https://sr.ht/~kennylevinsen/wlsunset/) - night light based on your location's sunset
+- [flameshot](https://github.com/flameshot-org/flameshot) - screenshots tool
+- [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer) - full-screen application and file launcher/finder
+- [swaylock](https://github.com/swaywm/swaylock) - a lock screen with blurred background
+- [qpwgraph](https://github.com/rncbc/qpwgraph) - an easy audio routing panel (PipeWire)
+- [pipewire-controller](https://github.com/apapamarkou/pipewire-controller) - a tray icon to change audio sample rate and buffer size
+- [appimage-integrator](https://github.com/apapamarkou/appimage-integrator) - simply drop AppImages into your "Applications" folder for automatic installation/integration into launchers, or delete them to uninstall
+- [lxsession](https://github.com/lxde/lxsession) - a lightweight session manager
 
 ## How to Start
 
