@@ -52,6 +52,10 @@ cp -r my-hyprland-desktop/.* ~/
 my-hyprland-desktop/setup.sh
 ```
 
+## Notes
+
+This setup is using `https://ipinfo.io` upon login to automatic find your location for use with `wlsunset`. Some people may want to edit `~.profile`, remove the `curl` commands and "hadcode" the location manually.
+
 ## Disclaimer
 
 This repo is provided as-is with no warranty.
