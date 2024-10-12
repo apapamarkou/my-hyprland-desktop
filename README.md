@@ -1,6 +1,6 @@
 # My Hyprland Desktop
 
-This repo contains my scripts to quickly set up a fresh Arch Linux installation with Sway and Hyprland window managers.
+This repo contains my post-install scripts to quickly set up a fresh Arch Linux installation with Sway and Hyprland window managers.
 
 ## System Features
 
@@ -41,10 +41,11 @@ This repo contains my scripts to quickly set up a fresh Arch Linux installation 
 - Make a bootable USB. A recommended method is using [Ventoy](https://www.ventoy.net/en/download.html) by following the [instructions](https://www.ventoy.net/en/doc_start.html) and copying the downloaded ISO there.
 - Run `archinstall`, choose a `desktop` type installation, and select `pipewire` as the audio server.
 
-### Installation
+**IMPORTANT** If you are trying this on a non blank (fresh install) Arch system **make a full backup**. Some config files will be overriten and A LOT of packages will be installed.
 
-Install dependencies:
-```bash
+### Installation
+ 
+```
 sudo pacman -S --needed git
 git clone https://github.com/apapamarkou/my-hyprland-desktop.git
 cp -r my-hyprland-desktop/* ~/
@@ -52,9 +53,17 @@ cp -r my-hyprland-desktop/.* ~/
 my-hyprland-desktop/setup.sh
 ```
 
-## Notes
+## Important Notes and warnings
 
-This setup is using `https://ipinfo.io` upon login to automatic find your location for use with `wlsunset`. Some people may want to edit `~.profile`, remove the `curl` commands and "hadcode" the location manually.
+- The setup script may install non FOSS software.
+- The setup script install a lot of needed packages in a non interactive mode using the flag `--noconfirm' for convinience.
+- This setup is using `https://ipinfo.io` upon login to automatic find your location for use with `wlsunset`. Some people may want to edit `~.profile`, remove the `curl` commands and "hadcode" the location manually.
+
+## TODO
+
+- User manual
+- Shortcuts Help
+- AI integration
 
 ## Disclaimer
 
