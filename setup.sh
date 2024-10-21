@@ -54,6 +54,8 @@ fi
 
 if ask_user_default_yes "Do you need Snap support?"; then
     yay -S --needed --noconfirm snapd
+    sudo systemctl enable --now snapd.socket
+    sudo systemctl enable --now snapd.apparmor.service
 fi
 
 if ask_user_default_yes "Do you need java development support?"; then
